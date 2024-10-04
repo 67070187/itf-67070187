@@ -1,0 +1,10 @@
+p{
+    font-size: 45px ;
+    display: flex;
+    background-color: aquamarine;
+    margin: auto;
+    padding: 5px;
+    border: 10px;
+    width: auto;
+    height: auto;
+}
