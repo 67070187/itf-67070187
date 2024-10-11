@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="cenn">
+    <h1 id="user">username, inamee</h1>
+    
+    <div class="profile" id="profile">
+        <div class ="notify"><p>1</p></div>
+    </div>
+        
+        <label>Set Username</label><input type="text" id="name"><button onclick="setName()">set </button>
+        <div><label>Set Profile img URL </label><input type="text" id="eiei"><button onclick="setImg()">set </button></div>
+        <div class ="container" ></div>
+    </div>
+
+        <script>
+            const username= document.getElementById("user");
+            const input=document.getElementById("name");
+            const profile=document.getElementById("profile");
+            const diddy=document.getElementById("eiei");
+            const newdiv=document.getElementsByClassName("container")[0];
+            
+
+            function setName(){
+                username.textContent= input.value;
+            }
+            function setImg(){
+                profile.style.backgroundImage="url("+ eiei.value +")";
+                console.log(input.value);
+                input.value="";
+            }
+            function addParagraph(){
+                const newgraph=document.createElement("p");
+                newgraph.textContent="new paragraph";
+                newdiv.appendChild(newgraph);
+            }
+        </script>
+   
+
+        
+   
+</body>
+</html>
